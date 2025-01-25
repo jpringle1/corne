@@ -15,7 +15,12 @@
 
         escap {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <3 4>;
+        };
+
+        caps {
+            bindings = <&caps_word>;
+            key-positions = <2 1>;
         };
     };
 
@@ -31,10 +36,10 @@
 
             display-name = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp E           &kp R            &kp T          &kp Y         &kp U            &kp I           &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D           &kp F            &kp G          &kp H         &kp J            &kp K           &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C           &kp V            &kp B          &kp N         &kp M            &kp COMMA       &kp DOT  &kp FSLH  &none
-                     &lt 2 CAPSLOCK  &lt 3 BACKSPACE  &lt 1 SPACE    &lt 1 RETURN  &lt 3 BACKSPACE  &lt 2 CAPSLOCK
+&none  &kp Q  &kp W  &kp E           &kp R            &kp T          &kp Y         &kp U      &kp I           &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D           &kp F            &kp G          &kp H         &kp J      &kp K           &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C           &kp V            &kp B          &kp N         &kp M      &kp COMMA       &kp DOT  &kp FSLH  &none
+                     &lt 2 CAPSLOCK  &lt 3 BACKSPACE  &lt 1 SPACE    &lt 1 RETURN  &lt 3 TAB  &lt 2 CAPSLOCK
             >;
         };
 
@@ -63,10 +68,10 @@
 
             display-name = "Syms";
             bindings = <
-&none  &kp LBKT       &kp RBKT   &kp LPAR  &kp RPAR  &none            &kp CARET    &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &none      &none
-&none  &kp EXCL       &kp AT     &kp HASH  &kp DLLR  &kp BACKSLASH    &kp PERCENT  &kp MINUS      &kp PLUS          &kp KP_MULTIPLY  &kp EQUAL  &none
-&none  &kp BACKSLASH  &kp SLASH  &kp LBRC  &kp RBRC  &kp PIPE2        &kp PIPE     &kp UNDER      &none             &none            &none      &none
-                                 &trans    &trans    &trans           &trans       &trans         &trans
+&none  &kp LBKT              &kp RBKT   &kp LPAR  &kp RPAR  &none            &kp CARET    &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE        &none      &none
+&none  &kp EXCL              &kp AT     &kp HASH  &kp DLLR  &kp BACKSLASH    &kp PERCENT  &kp MINUS      &kp PLUS          &kp KP_MULTIPLY  &kp EQUAL  &none
+&none  &kp NON_US_BACKSLASH  &kp SLASH  &kp LBRC  &kp RBRC  &kp PIPE2        &kp PIPE     &kp UNDER      &none             &none            &none      &none
+                                        &trans    &trans    &trans           &trans       &trans         &trans
             >;
         };
 
