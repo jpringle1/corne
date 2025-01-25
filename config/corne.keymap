@@ -1,4 +1,5 @@
 
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -53,7 +54,6 @@
             bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
         };
     };
-
     combos {
         compatible = "zmk,combos";
 
@@ -87,10 +87,10 @@
 
             display-name = "Base";
             bindings = <
-&none  &kp Q             &kp W             &kp E                    &kp R                  &kp T          &kp Y         &kp U                   &kp I                     &kp O              &kp P                 &none
-&none  &weak LEFT_GUI A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D  &shifthr LEFT_SHIFT F  &kp G          &kp H         &shifthr RIGHT_SHIFT J  &shifthr RIGHT_CONTROL K  &weak RIGHT_ALT L  &weak RIGHT_GUI SEMI  &none
-&none  &kp Z             &kp X             &kp C                    &kp V                  &kp B          &kp N         &kp M                   &kp COMMA                 &kp DOT            &kp FSLH              &none
-                                           &lt 2 A                  &lt 3 BACKSPACE        &lt 1 SPACE    &lt 1 RETURN  &lt 3 TAB               &lt 2 A
+&none  &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y         &kp U              &kp I                &kp O            &kp P               &none
+&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp H         &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &none
+&none  &kp Z           &kp X           &kp C               &kp V             &kp B          &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH            &none
+                                       &lt 2 A             &lt 3 BACKSPACE   &lt 1 SPACE    &lt 1 RETURN  &lt 3 TAB          &lt 2 A
             >;
         };
 
@@ -139,10 +139,10 @@
 
         Gaming {
             bindings = <
-&trans  &kp TAB    &kp Q  &kp W        &kp E      &kp R        &kp T      &kp Y   &kp U   &kp I      &kp O    &trans
-&trans  &kp LSHFT  &kp A  &kp S        &kp D      &kp F        &kp G      &kp H   &kp J   &kp K      &kp L    &trans
-&trans  &kp LALT   &kp Z  &kp X        &kp C      &kp V        &kp B      &kp N   &kp M   &kp COMMA  &kp DOT  &trans
-                          &lt 1 ASTRK  &kp LCTRL  &kp SPACE    &kp ENTER  &trans  &trans
+&trans  &kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T      &kp Y   &kp U   &kp I      &kp O    &trans
+&trans  &kp LSHFT  &kp A  &kp S  &kp D      &kp F        &kp G      &kp H   &kp J   &kp K      &kp L    &trans
+&trans  &kp LALT   &kp Z  &kp X  &kp C      &kp V        &kp B      &kp N   &kp M   &kp COMMA  &kp DOT  &trans
+                          &lt 1 A  &kp LCTRL  &kp SPACE    &kp ENTER  &trans  &trans
             >;
 
             label = "Gaming";
