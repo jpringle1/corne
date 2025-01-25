@@ -59,7 +59,7 @@
 
         escap {
             bindings = <&kp ESC>;
-            key-positions = <3 4>;
+            key-positions = <5 4>;
         };
 
         caps {
@@ -72,6 +72,11 @@
         Gaming {
             bindings = <&tog 1>;
             key-positions = <26 25>;
+        };
+
+        gameReturn {
+            bindings = <&kp RET>;
+            key-positions = <28 29>;
         };
     };
 
