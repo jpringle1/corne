@@ -53,6 +53,24 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
         };
+
+        altspaceescape: altspaceescape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTSPACEESCAPE";
+            bindings = <&lt 1 SPACE>, <&kp ESCAPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        altspacecaps: altspacecaps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTSPACECAPS";
+            bindings = <&lt 1 SPACE>, <&kp CAPS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -69,10 +87,10 @@
 
             display-name = "Base";
             bindings = <
-&none  &kp Q             &kp W             &kp E                    &kp R                  &kp T          &kp Y         &kp U                   &kp I                     &kp O              &kp P                 &none
-&none  &weak LEFT_GUI A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D  &shifthr LEFT_SHIFT F  &kp G          &kp H         &shifthr RIGHT_SHIFT J  &shifthr RIGHT_CONTROL K  &weak RIGHT_ALT L  &weak RIGHT_GUI SEMI  &none
-&none  &kp Z             &kp X             &kp C                    &kp V                  &kp B          &kp N         &kp M                   &kp COMMA                 &kp DOT            &kp FSLH              &none
-                                           &mo 2                    &lt 3 BACKSPACE        &lt 2 SPACE    &lt 2 RETURN  &lt 3 TAB               &mo 2
+&none  &kp Q             &kp W             &kp E                    &kp R                  &kp T              &kp Y          &kp U                   &kp I                     &kp O              &kp P                 &none
+&none  &weak LEFT_GUI A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D  &shifthr LEFT_SHIFT F  &kp G              &kp H          &shifthr RIGHT_SHIFT J  &shifthr RIGHT_CONTROL K  &weak RIGHT_ALT L  &weak RIGHT_GUI SEMI  &none
+&none  &kp Z             &kp X             &kp C                    &kp V                  &kp B              &kp N          &kp M                   &kp COMMA                 &kp DOT            &kp FSLH              &none
+                                           &mo 2                    &lt 3 BACKSPACE        &altspaceescape    &altspacecaps  &lt 3 TAB               &mo 2
             >;
         };
 
@@ -120,4 +138,3 @@
         };
     };
 };
-
