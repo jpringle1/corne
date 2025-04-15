@@ -71,7 +71,7 @@
             bindings = <&lt 1 RET>, <&kp CAPS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
         };
 
         bluetoothSelORClear: bluetoothSelORClear {
@@ -101,7 +101,7 @@
 &none  &kp Q             &kp W             &kp E                    &kp R                  &kp T              &kp Y           &kp U                   &kp I                     &kp O              &kp P                       &none
 &none  &weak LEFT_GUI A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D  &shifthr LEFT_SHIFT F  &kp G              &kp H           &shifthr RIGHT_SHIFT J  &shifthr RIGHT_CONTROL K  &weak RIGHT_ALT L  &weak RIGHT_GUI SEMI        &none
 &none  &kp Z             &kp X             &kp C                    &kp V                  &kp B              &kp N           &kp M                   &kp COMMA                 &kp DOT            &mt NON_US_BACKSLASH SLASH  &none
-                                           &tog 3                   &lt 2 BACKSPACE        &altspaceescape    &altreturncaps  &lt 2 TAB               &none
+                                           &none                    &lt 2 BACKSPACE        &altspaceescape    &altreturncaps  &lt 2 TAB               &none
             >;
         };
 
@@ -114,10 +114,10 @@
 
             display-name = "NumSym";
             bindings = <
-&none  &mt F11 F1          &mt F12 F2                      &kp F3                      &kp F4                                  &kp F5            &kp F6           &kp F7                 &kp F8             &kp F9                &kp F10               &none
-&none  &mt EXCLAMATION N1  &mt AT N2                       &mt POUND N3                &mt DOLLAR N4                           &mt PERCENT N5    &mt CARET N6     &mt AMPS N7            &mt ASTERISK N8    &kp N9                &mt DOUBLE_QUOTES N0  &none
+&none   &mt F11 F1          &mt F12 F2                      &mt F13 F3                  &mt F14 F4                              &mt F15 F5                        &mt F16 F6       &mt F17 F7             &mt F18 F8         &mt F19 F9            &mt F20 F10           &none
+&none  &mt EXCLAMATION N1  &mt AT N2                       &mt POUND N3                &mt DOLLAR N4                           &mt PERCENT N5    &mt CARET N6     &mt AMPS N7            &mt ASTERISK N8    &mt APOS N9           &mt DOUBLE_QUOTES N0  &none
 &none  &none               &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &none             &mt CARET TILDE  &mt UNDER KP_SUBTRACT  &mt EQUAL KP_PLUS  &mt NON_US_HASH APOS  &mt GRAVE PIPE        &none
-                                                           &none                       &trans                                  &trans            &trans           &trans                 &trans
+                                                           &trans                      &trans                                  &trans            &trans           &trans                 &trans
             >;
         };
 
