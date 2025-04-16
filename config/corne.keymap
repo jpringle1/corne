@@ -114,10 +114,10 @@
 
             display-name = "NumSym";
             bindings = <
-&none  &mt F11 F1          &mt F12 F2                      &mt F13 F3                  &mt F14 F4                              &mt F15 F5        &mt F16 F6       &mt F17 F7             &mt F18 F8         &mt F19 F9            &mt F20 F10           &none
-&none  &mt EXCLAMATION N1  &mt AT N2                       &mt POUND N3                &mt DOLLAR N4                           &mt PERCENT N5    &mt CARET N6     &mt AMPS N7            &mt ASTERISK N8    &mt NON_US_HASH N9    &mt DOUBLE_QUOTES N0  &none
-&none  &none               &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &none             &mt LS(NUHS) LS(BACKSLASH)  &mt UNDER KP_SUBTRACT  &mt EQUAL KP_PLUS  &mt NON_US_HASH APOS  &mt GRAVE PIPE        &none
-                                                           &trans                      &trans                                  &trans            &trans           &trans                 &trans
+&none  &mt F11 F1          &mt F12 F2                      &mt F13 F3                  &mt F14 F4                              &mt F15 F5        &mt F16 F6                         &mt F17 F7             &mt F18 F8         &mt F19 F9            &mt F20 F10           &none
+&none  &mt EXCLAMATION N1  &mt AT N2                       &mt POUND N3                &mt DOLLAR N4                           &mt PERCENT N5    &mt CARET N6                       &mt AMPS N7            &mt ASTERISK N8    &mt NON_US_HASH N9    &mt DOUBLE_QUOTES N0  &none
+&none  &none               &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &none             &mt LS(NUHS) LS(NON_US_BACKSLASH)  &mt UNDER KP_SUBTRACT  &mt EQUAL KP_PLUS  &mt NON_US_HASH APOS  &mt GRAVE PIPE        &none
+                                                           &trans                      &trans                                  &trans            &trans                             &trans                 &trans
             >;
         };
 
