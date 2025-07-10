@@ -68,7 +68,7 @@
         altreturncaps: altreturncaps {
             compatible = "zmk,behavior-mod-morph";
             label = "ALTRETURNCAPS";
-            bindings = <&lt 2 RET>, <&kp CAPS>;
+            bindings = <&lt 1 RET>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
