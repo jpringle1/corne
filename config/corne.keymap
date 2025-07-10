@@ -142,10 +142,10 @@
 
         NavAct {
             bindings = <
-&trans  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &mt C_MUTE C_PLAY_PAUSE    &none    &kp LC(LS(M))  &kp LC(LS(O))  &kp LS(LC(H))  &kp LG(L)  &trans
-&trans  &kp LEFT    &kp DOWN           &kp UP_ARROW     &kp RIGHT   &kp DELETE                 &kp INS  &kp LEFT       &kp DOWN       &kp UP_ARROW   &kp RIGHT  &trans
-&trans  &kp HOME    &kp PAGE_DOWN      &kp PAGE_UP      &kp END     &none                      &none    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END    &trans
-                                       &trans           &trans      &trans                     &trans   &trans         &trans
+&trans  &mt C_MUTE C_PLAY_PAUSE  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT    &none       &kp LC(LS(M))  &kp LC(LS(O))  &kp LS(LC(H))  &kp LG(L)  &trans
+&trans  &kp DELETE  &kp LEFT           &kp DOWN         &kp UP_ARROW     &kp RIGHT             &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT      &kp INS    &trans 
+&trans  &kp HOME    &kp PAGE_DOWN      &kp PAGE_UP      &kp END     &none                      &none       &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END    &trans
+                                       &trans           &trans      &trans                     &trans      &trans         &trans
             >;
 
             label = "Nav & Acts";
