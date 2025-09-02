@@ -109,7 +109,7 @@
             bindings = <
 &none  &kp Q             &kp W             &kp E                    &kp R                  &kp T              &kp Y           &kp U                   &kp I                     &kp O              &kp P                 &none
 &none  &weak LEFT_GUI A  &weak LEFT_ALT S  &shifthr LEFT_CONTROL D  &shifthr LEFT_SHIFT F  &kp G              &kp H           &shifthr RIGHT_SHIFT J  &shifthr RIGHT_CONTROL K  &weak RIGHT_ALT L  &weak RIGHT_GUI SEMI  &none
-&none  &kp Z             &kp X             &kp C                    &kp V                  &kp B              &kp N           &kp M                   &kp COMMA                 &kp DOT            &kp SLASH             &none
+&none  &kp Z             &kp X             &kp C                    &kp V                  &kp B              &kp N           &kp M                   &kp COMMA                 &kp DOT            &kp SLASH             &bootloader
                                            &bootloader              &lt 2 BACKSPACE        &altspaceescape    &altreturncaps  &lt 2 TAB               &bootloader
             >;
         };
