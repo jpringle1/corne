@@ -93,7 +93,26 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Gaming_Enter {
+            bindings = <&kp RET>;
+            key-positions = <3 4>;
+            layers = <5>;
+        };
+
+        Gaming_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 1>;
+            layers = <5>;
+        };
+
+        Gaming-toggle {
+            bindings = <&tog 5>;
+            key-positions = <26 25>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -151,6 +170,15 @@
 &none  &kp F1  &kp F2            &kp F3             &kp F4                 &kp F5       &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
 &none  &trans  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &trans       &trans  &trans  &trans  &trans  &trans   &none
                                  &trans             &trans                 &trans       &trans  &trans  &trans
+            >;
+        };
+
+        Gaming {
+            bindings = <
+&trans  &kp TAB    &kp Q  &kp W   &kp E      &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A  &kp S   &kp D      &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp BSLH   &kp Z  &kp X   &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans  &kp LCTRL  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
