@@ -143,7 +143,7 @@
 &kp LESS_THAN    &kp LEFT_BRACKET  &mt DOUBLE_QUOTES LEFT_BRACE  &mt PIPE2 LEFT_PARENTHESIS  &kp DOLLAR       &kp POUND        &mt AMPERSAND RIGHT_PARENTHESIS  &mt TILDE2 RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN
 &mt F1 NUMBER_1  &mt F2 NUMBER_2   &mt F3 NUMBER_3               &mt F4 NUMBER_4             &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F7 NUMBER_7                  &mt F8 NUMBER_8         &mt F9 NUMBER_9    &mt F10 NUMBER_0
 &kp GRAVE        &kp AT_SIGN       &kp APOSTROPHE                &kp UNDERSCORE              &kp NON_US_HASH  &kp PERCENT      &kp MINUS                        &kp PLUS                &kp ASTERISK       &kp EQUAL
-                                   &trans                        &trans                      &kp F11          &kp F12          &trans                           &trans
+                                   &trans                        &tog 5                      &kp F11          &kp F12          &tog 4                           &trans
             >;
         };
 
@@ -162,6 +162,24 @@
 &none                &none         &none           &none                      &none                    &none      &none           &none           &none          &none
 &mmv MOVE_LEFT       &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT            &mkp LCLK                &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT
                                    &trans          &trans                     &trans                   &trans     &trans          &trans
+            >;
+        };
+
+        spaceDash {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &kp MINUS  &trans  &trans
+            >;
+        };
+
+        spaceUnderscore {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &kp UNDER  &trans  &trans  &trans
             >;
         };
     };
