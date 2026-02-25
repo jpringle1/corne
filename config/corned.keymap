@@ -195,7 +195,7 @@
 
         Mouse {
             bindings = <
-&mt K_PREV C_REWIND  &kp C_VOL_DN  &kp C_VOL_UP    &mt K_NEXT C_FAST_FORWARD  &mt K_MUTE C_PLAY_PAUSE  &kp INS    &kp LC(LS(M))   &kp LC(LS(O))   &kp LC(LS(H))  &kp LG(L)
+&mt C_PREV C_REWIND  &kp C_VOL_DN  &kp C_VOL_UP    &mt C_NEXT C_FAST_FORWARD  &mt C_MUTE C_PLAY_PAUSE  &kp INS    &kp LC(LS(M))   &kp LC(LS(O))   &kp LC(LS(H))  &kp LG(L)
 &none                &none         &none           &none                      &none                    &none      &none           &none           &none          &none
 &mmv MOVE_LEFT       &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT            &mkp LCLK                &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT
                                    &trans          &trans                     &trans                   &trans     &trans          &trans
