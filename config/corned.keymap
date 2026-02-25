@@ -6,40 +6,39 @@
 
 / {
     behaviors {
-  shifted: macro_shifted_kp {
-    #binding-cells = <1>;
-    label = "MACRO_SHIFTED_KP";
-    compatible = "zmk,behavior-macro-one-param";
-    bindings =
-      <&macro_press &kp LSHFT>,
-      <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-      <&macro_release &kp LSHFT>;
-  };
+        shifted: macro_shifted_kp {
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
+        };
 
-  as_ht: autoshift_hold_tap {
-    compatible = "zmk,behavior-hold-tap";
-    label = "AUTOSHIFT_HOLD_TAP";
-    #binding-cells = <2>;
-    tapping-term-ms = <135>;
-    flavor = "tap-preferred";
-    bindings = <&shifted>, <&kp>;
-  };
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            flavor = "tap-preferred";
+            bindings = <&shifted>, <&kp>;
+        };
 
-  as: autoshift {
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    label = "AUTOSHIFT_KP";
-    bindings =
-      <&macro_press>,
-      <&macro_param_1to1>,
-      <&macro_param_1to2>,
-      <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-      <&macro_pause_for_release>,
-      <&macro_release>,
-      <&macro_param_1to1>,
-      <&macro_param_1to2>,
-      <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-  };
+        as: autoshift {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -160,6 +159,9 @@
         };
     };
 
+    macros {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -202,19 +204,19 @@
 
         spaceDash {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-                &trans  &trans  &kp MINUS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &lt 1 MINUS  &trans  &trans  &trans
             >;
         };
 
         spaceUnderscore {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &kp UNDER  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &lt 1 UNDERSCORE  &trans  &trans  &trans
             >;
         };
     };
