@@ -157,6 +157,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        underscoreHyphenLayers: underscoreHyphenLayers {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UNDERSCOREHYPHENLAYERS";
+            #binding-cells = <0>;
+            bindings = <&tog 4>, <&tog 5>;
+        };
     };
 
     macros {
@@ -180,7 +187,7 @@
 &kp LESS_THAN    &kp LEFT_BRACKET  &mt DOUBLE_QUOTES LEFT_BRACE  &mt PIPE2 LEFT_PARENTHESIS  &kp DOLLAR       &kp POUND        &mt AMPERSAND RIGHT_PARENTHESIS  &mt TILDE2 RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN
 &mt F1 NUMBER_1  &mt F2 NUMBER_2   &mt F3 NUMBER_3               &mt F4 NUMBER_4             &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F7 NUMBER_7                  &mt F8 NUMBER_8         &mt F9 NUMBER_9    &mt F10 NUMBER_0
 &kp GRAVE        &kp AT_SIGN       &kp APOSTROPHE                &kp UNDERSCORE              &kp NON_US_HASH  &kp PERCENT      &kp MINUS                        &kp PLUS                &kp ASTERISK       &kp EQUAL
-                                   &trans                        &tog 5                      &kp F11          &kp F12          &tog 4                           &trans
+                                   &trans                        &underscoreHyphenLayers     &kp F11          &kp F12          &none                            &trans
             >;
         };
 
